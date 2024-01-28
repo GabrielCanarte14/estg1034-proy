@@ -49,7 +49,7 @@ ubicación geográfica y la diversidad étnica.
 
 1. Identificar diferencias en las puntuaciones SAT en función de la ubicación geográfica
 2. Investigar la correlación entre la diversidad étnica y las puntuaciones SAT
-3. XYZ
+3. Encontrar la relación entre el tamaño de la población estudiantil y las puntuaciones SAT utilizando regresión lineal 
 
 #pagebreak()
 
@@ -225,6 +225,41 @@ a esto, es importante tener en cuenta que aún hay un alto porcentaje de
 variabilidad que no puede ser explicado por la ciudad de residencia, lo cual
 sugiere que existen otros factores que también pueden influir en el rendimiento
 en el examen SAT.
+
+#pagebreak()
+
+== Exploración de la Relación entre el Tamaño de la Población Estudiantil y las Puntuaciones SAT mediante Regresión Lineal
+
+#figure(
+  image("./assets/graf_Average_Score_Math.png", width: 90%),
+  caption: "Gráfico de regresión lineal - Math",
+)
+
+#figure(
+  image("./assets/graf_Average_Score_Reading.png", width: 90%),
+  caption: "Gráfico de regresión lineal - Reading",
+)
+
+#figure(
+  image("./assets/graf_Average_Score_Writing.png", width: 90%),
+  caption: "Gráfico de regresión lineal - Writing",
+)
+
+El objetivo es aplicar técnicas de regresión lineal para examinar la relación entre el tamaño de la matrícula estudiantil y las puntuaciones promedio en los exámenes SAT de matemáticas, lectura y escritura.  La regresión lineal proporciona un enfoque sistemático para modelar la dependencia entre estas variables, permitiendo obtener coeficientes clave como la pendiente e intercepto. 
+
+A través de cálculos y análisis realizados en el entorno estadístico R, se determinarán los parámetros fundamentales de cada modelo de regresión lineal. Estos parámetros se traducirán en ecuaciones lineales específicas que describirán la relación cuantitativa entre el tamaño de la matrícula y el desempeño académico en diferentes áreas. 
+
+Las rectas obtenidas son las siguientes:
+
+Para la puntuación promedio de Matemáticas se tiene `y = -1349x + 4.884`.
+
+Para la puntuación promedio de Lectura se tiene `y = -1183.83x + 4.59`.
+
+Para la puntuación promedio de Escritura se tiene `y = -1086.576x + 4.424`.
+
+El análisis detallado de las ecuaciones de regresión revela una tendencia general negativa entre el tamaño de la matrícula estudiantil y las puntuaciones promedio de los exámenes SAT. En particular, las puntuaciones promedio de Matemáticas muestran una disminución pronunciada a medida que aumenta el tamaño de la matrícula, evidenciado por la pendiente negativa significativa de `y = -1349x + 4.884`. Este hallazgo sugiere que las escuelas con matrículas más grandes enfrentan desafíos específicos en cuanto al rendimiento académico en la materia de Matemáticas.
+
+Al observar más detenidamente las tendencias específicas en cada área de evaluación, se destaca que la relación negativa entre el tamaño de la matrícula y las puntuaciones promedio persiste. Sin embargo, es interesante notar que la magnitud de la disminución varía entre las diferentes secciones de los exámenes SAT. Mientras que Matemáticas exhibe la mayor disminución, seguida de Lectura y, finalmente, Escritura, la consistencia en la dirección negativa señala la importancia de considerar el tamaño de la población estudiantil en la formulación de estrategias educativas.
 
 #pagebreak()
 
