@@ -207,7 +207,7 @@ y que es importante tener en cuenta su impacto en los resultados del *SAT*.
 
 == ANOVA ONE WAY entre variables promedio SAT y City
 
-#v(1em)
+#v(1em) 
 
 #figure(
   image("./assets/anova.png", width: 90%),
@@ -228,7 +228,7 @@ en el examen SAT.
 
 #pagebreak()
 
-== Exploración de la Relación entre el tamaño de la población estudiantil y las puntuaciones SAT mediante Regresión Lineal
+== Exploración de la Relación entre el tamaño de la población estudiantil y las puntuaciones SAT mediante regresión lineal
 
 #figure(
   image("./assets/graf_Average_Score_Math.png", width: 90%),
