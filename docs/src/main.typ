@@ -228,7 +228,7 @@ en el examen SAT.
 
 #pagebreak()
 
-== Exploración de la Relación entre el Tamaño de la Población Estudiantil y las Puntuaciones SAT mediante Regresión Lineal
+== Exploración de la Relación entre el tamaño de la población estudiantil y las puntuaciones SAT mediante Regresión Lineal
 
 #figure(
   image("./assets/graf_Average_Score_Math.png", width: 90%),
